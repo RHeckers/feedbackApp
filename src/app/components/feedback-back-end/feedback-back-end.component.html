@@ -1,0 +1,11 @@
+<div class="backEndFeedbackHolder">
+
+  <h1 class="backEndFeedbackHolderTitle">Feedback of your emplyees</h1>
+
+  <div class="backEndFeedback" *ngFor="let feedback of feedBacks">
+    <h1 class="backEndFeedbackTitle">{{feedback.title}}</h1>
+    <p class="backEndFeedbackCategory">{{feedback.category}}</p>
+    <p class="backEndFeedbackText">{{feedback.feedback}}</p>
+  </div>
+
+</div>

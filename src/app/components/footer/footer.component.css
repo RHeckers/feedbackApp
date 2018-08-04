@@ -1,0 +1,20 @@
+.footer{
+    position: relative;
+    margin-top: 30px;
+    height: 30px;
+    text-align: center;
+    background: rgb(42, 60, 76);
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+
+}
+
+.footerItem{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 15px;
+    margin-top: 12px;
+    color: rgb(227, 234, 241);
+
+}

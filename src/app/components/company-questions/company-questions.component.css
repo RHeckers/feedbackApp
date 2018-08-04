@@ -1,0 +1,31 @@
+.companyQuestionsHolder{
+    text-align: center;
+    position: relative;
+}
+
+.companyQuestion{
+    display: inline-block;
+    margin: 20px 2%;
+    width: 39%; 
+    padding: 1%;
+    border: 1.5px solid rgb(42, 60, 76);
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(11, 15, 31, 0.24);
+    background: rgb(255, 255, 255);
+    min-height: 140px;
+    max-height: 140px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.companyQuestionPageTitle{
+    margin: 25px 0 ;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: rgb(42, 60, 76);
+}
+
+.companyQuestionTitle{
+    font-size: 1.3rem;
+}

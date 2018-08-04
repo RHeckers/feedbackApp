@@ -1,0 +1,42 @@
+.newestFeedbackContainer{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 25px 5% 25px 5%;
+}
+
+.adminHomeContainer{
+    height: 600px;
+}
+
+.adminHomeSectionSelection{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin-left: 8%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 22%;
+    bottom: 0px;
+    height: 250px;
+    float: left;
+    z-index: -1;
+    font-size: 18px;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    margin-left: 7%;
+    margin-top: -55px;
+    position: absolute;
+    border: 1px solid black;
+    background: white;
+    border-radius: 100%;
+}
+
+.adminHomeSectionSelectionTitle{
+    padding-top: 60px;
+    /* padding-bottom: 7px; */
+    font-size: 25px;
+    font-weight: 600;
+}

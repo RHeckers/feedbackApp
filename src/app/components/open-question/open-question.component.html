@@ -1,0 +1,29 @@
+<div class="openQuestionContainer">
+
+   <h1 class="openQuestionTitle">{{pagetitle}}</h1>
+
+   <label>FeedBack Title:
+      <input #feedbackTitle />
+    </label> 
+
+    <label>Feedback Category:</label>
+    <select class="browser-default validate" #feedbackCategory>
+      <option value="" disabled selected>Please select a category for your feedback</option>
+      <option value="Marketing">Marketing</option>
+      <option value="Sales">Sales</option>
+      <option value="Support">Support</option>
+      <option value="Company policy">Company policy</option>
+      <option value="Co-workers">Co-workers</option>
+    </select>
+
+
+    <label>Leave your feedback:
+      <textarea #feedback name="" id="" cols="30" rows="10"></textarea>
+    </label> 
+    
+    
+    <button class="formSubmitBtn" (click)="add(feedbackTitle.value, feedbackCategory.value, feedback.value)">
+      Submit feedback
+    </button>
+
+</div>

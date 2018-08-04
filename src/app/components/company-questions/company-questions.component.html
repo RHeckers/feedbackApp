@@ -1,0 +1,11 @@
+<div class="companyQuestionsHolder">
+
+  <h1 class="companyQuestionPageTitle">Things we need your feedback on</h1>
+
+  <div class="companyQuestion" *ngFor="let question of questions">
+    <h1 class="companyQuestionTitle">{{question.title}}</h1>
+    <p class="companyQuestionCategory">{{question.category}}</p>
+    <p class="companyQuestionText">{{question.questionText}}</p>
+  </div>
+
+</div>
