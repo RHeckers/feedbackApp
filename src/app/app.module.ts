@@ -16,6 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FeedbackBackEndComponent } from './components/feedback-back-end/feedback-back-end.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
+import { MainLoginComponent } from './components/main-login/main-login.component';
+import { CoreModule } from './auth/core.module';
 
 
 
@@ -29,13 +31,15 @@ import { AdminHomeComponent } from './components/admin-home/admin-home.component
     FooterComponent,
     FeedbackBackEndComponent,
     NotfoundComponent,
-    AdminHomeComponent
+    AdminHomeComponent,
+    MainLoginComponent
   ],
   imports: [
     BrowserModule,
     AngularFirestoreModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

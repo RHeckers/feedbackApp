@@ -8,6 +8,7 @@ import { OpenQuestionComponent } from '../../components/open-question/open-quest
 import { UserMainSelectionComponent } from '../../components/user-main-selection/user-main-selection.component';
 import { NotfoundComponent } from '../../components/notfound/notfound.component';
 import { AdminHomeComponent } from '../../components/admin-home/admin-home.component';
+import { MainLoginComponent } from '../../components/main-login/main-login.component';
 
 const routes: Routes = [
   {path: 'company-questions', component: CompanyQuestionsComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'open-feedback', component: OpenQuestionComponent},
   {path: 'category-selection', component: UserMainSelectionComponent},
   {path: 'admin-home', component: AdminHomeComponent},
+  {path: '', component: MainLoginComponent},
   {path: '**', component: NotfoundComponent}
 ]; 
 

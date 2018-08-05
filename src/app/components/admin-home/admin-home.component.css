@@ -9,6 +9,7 @@
 }
 
 .adminHomeSectionSelection{
+    cursor: pointer;
     text-align: center;
     border: 1px solid black;
     padding: 5px;
@@ -24,9 +25,9 @@
 }
 
 .circle{
-    width: 100px;
-    height: 100px;
-    margin-left: 7%;
+    width: 6rem;
+    height: 6rem;
+    margin-left: 7.5%;
     margin-top: -55px;
     position: absolute;
     border: 1px solid black;
