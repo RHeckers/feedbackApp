@@ -24,15 +24,7 @@ export class AuthService {
               private router: Router) {
 
       //// Get auth data, then get firestore user document || null
-      this.user = this.afAuth.authState
-        .pipe(switchMap(user => {
-          if (user) {
-            this.userId = user.uid;
-            return this.afs.doc<User>(`users/${user.uid}`).valueChanges()
-          } else {
-            return of(null)
-          }
-        }))
+      this.user =  afAuth.authState;
   }
 
 
@@ -70,6 +62,19 @@ export class AuthService {
     this.afAuth.auth.signOut().then(() => {
         this.router.navigate(['/']);
     });
+  }
+
+  login(email: string, password: string) {
+    this.afAuth
+      .auth
+      .signInWithEmailAndPassword(email, password)
+      .then(value => {
+        this.router.navigate(['/category-selection']);
+        console.log(value);
+      })
+      .catch(err => {
+        console.log('Something went wrong:',err);
+      });
   }
 
 }

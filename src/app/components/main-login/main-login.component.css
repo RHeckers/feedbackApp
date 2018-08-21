@@ -1,0 +1,45 @@
+.mainQuestion{
+    display: inline-block;
+    border: 1px solid rgb(42, 60, 76);
+    box-shadow: 5px 4px 6px rgba(11, 15, 31, 0.24);
+    width: 30%;
+    margin: 50px 2.5% 0 0;
+    transition-property: all;
+    transition-duration: 500ms;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    color: rgb(42, 60, 76);
+
+}
+
+.mainQuestion:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    box-shadow: 6px 5px 7px rgba(11, 15, 31, 0.24);
+    color: rgb(255, 255, 255);
+    background: rgb(42, 60, 76);
+}
+
+.mainQuestionContainer{
+    position: relative;
+    width: 97.5%;
+} 
+
+.mainQuestionContainer:last-child{
+    margin-left: 2.5%;
+}
+
+.mainQuestionSelectionTitle{
+    padding: 1%;
+    margin-top: 30%;
+    font-size: 2.2rem;
+    font-weight: bold;
+    
+}
+
+.mainQuestionSelectionText{
+    font-size: 1.5rem;
+    margin-top: 5%; 
+    padding: 1%;
+    
+}

@@ -11,6 +11,12 @@ export class MainLoginComponent implements OnInit {
   constructor(public auth: AuthService ) { } 
 
   ngOnInit() {
+    
+  }
+
+  login(email, password) {
+    console.log(email, password)
+    this.auth.login(email.value, password.value);   
   }
 
 }
