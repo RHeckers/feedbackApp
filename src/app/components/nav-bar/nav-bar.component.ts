@@ -13,7 +13,7 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit() { 
     this.navBar = document.getElementById('navBar');
-    console.log(this.navBar);
-    this.navBar.style.height = (window.innerHeight/100) * 12 + 'px';
+    // console.log(this.navBar);
+    // this.navBar.style.height = (window.innerHeight/100) * 12 + 'px';
   }
 }

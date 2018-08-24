@@ -48,9 +48,7 @@ export class AuthService {
 
     const data: User = {
       uid: user.uid,
-      email: user.email,
-      displayName: user.displayName,
-      photoURL: user.photoURL
+      email: user.email
     }
 
     return userRef.set(data, { merge: true })
@@ -70,7 +68,7 @@ export class AuthService {
       .signInWithEmailAndPassword(email, password)
       .then(value => {
         this.router.navigate(['/category-selection']);
-        console.log(value);
+        this.updateUserData(value.user)
       })
       .catch(err => {
         console.log('Something went wrong:',err);

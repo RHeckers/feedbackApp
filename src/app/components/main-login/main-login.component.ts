@@ -8,9 +8,17 @@ import { AuthService } from '../../auth/auth.service';
 })
 export class MainLoginComponent implements OnInit {
 
+  loginForm: HTMLElement;
+
   constructor(public auth: AuthService ) { } 
 
   ngOnInit() {
+    setTimeout(() => {
+      this.loginForm = document.getElementById('loginForm');
+      console.log(this.loginForm)
+      this.loginForm.style.height = window.innerHeight * 0.31 + 'px'
+    }, 100);
+    
     
   }
 

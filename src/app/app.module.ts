@@ -18,6 +18,7 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
 import { MainLoginComponent } from './components/main-login/main-login.component';
 import { CoreModule } from './auth/core.module';
+import { FeedbackComponent } from './components/feedback/feedback.component';
 
 
 
@@ -32,7 +33,8 @@ import { CoreModule } from './auth/core.module';
     FeedbackBackEndComponent,
     NotfoundComponent,
     AdminHomeComponent,
-    MainLoginComponent
+    MainLoginComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,

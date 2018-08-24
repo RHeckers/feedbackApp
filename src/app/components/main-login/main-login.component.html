@@ -9,31 +9,34 @@
   <!-- template will replace this div -->
 </div>
 
-<ng-template #guest>
-    <div class="container">
-        <h3 class="center-align">Howdy, GUEST</h3>
-        <h5 class="center-align">Login to get started...</h5>
+
+  <div class="loginForm" id="loginForm">
+      <ng-template #guest>
+        <h3 class="loginFormText">Login Form</h3>
         
-        <input type="text" #email placeholder="Email">
-        <input type="text" #password placeholder="Password">
+        <input class="loginInput" type="text" #email placeholder="Enter your email">
+        <input class="loginInput" type="password" #password placeholder="Enter your password">
 
-        <button (click)="login(email, password)">Login</button>
+        <button class="loginBtn" (click)="login(email, password)">LOGIN</button>
+      </ng-template> 
+      <ng-template #authenticated>
+          <div *ngIf="auth.user | async as user">
           
-      </div>
-  
+              <h3 class="loginFormText">You are already logedin</h3>
 
-</ng-template>
+              <input class="loginInput" style="visibility: hidden;" type="text" #email placeholder="Enter your email">
+             <input class="loginInput"  style="visibility: hidden;"  type="password" #password placeholder="Enter your password">
+          
+              <button class="loginBtn" (click)="auth.signOut()">SIGN OUT</button>
+                
+            </div>
+      
+      </ng-template>
+      
+  </div>
 
-<ng-template #authenticated>
-    <div *ngIf="auth.user | async as user">
-        <div class="container">
-            
-            <h3 class="center-align">Logedin successfull</h3> 
 
-            <button (click)="auth.signOut()">Signout</button>
 
-          </div>
-    </div>
-</ng-template>
+
 
 

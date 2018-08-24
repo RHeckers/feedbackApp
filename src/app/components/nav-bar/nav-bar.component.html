@@ -1,12 +1,17 @@
-<div class="navBar" id="navBar">
-  <div class="logoBox">
-          <h2 class="logo">LOGO</h2>
-  </div>
+<nav class="topNav">
+    <div class="logoBox">
+        <h2 class="logo">LOGO</h2>
+    </div>  
 
-  <div class="navItems">
-      <p class="navItem">Dashboard</p>
-      <p class="navItem">Evalueren</p>
-      <p class="navItem">Lead kanalen</p>
-      <p class="navItem">Account</p>
+    <p class="login" routerLink="/login">Login / logout</p>
+
+</nav>
+
+<div class="navBar" id="navBar">
+    <div class="navItems">
+      <p class="navItem" routerLink="/feedback">Feedback</p>
+      <p class="navItem" routerLink="/compliments">Compliments</p>
+      <p class="navItem" routerLink="/company-questions">Company Questions</p>
+      <p class="navItem" routerLink="/admin-login">Admin</p>
   </div>
 </div>

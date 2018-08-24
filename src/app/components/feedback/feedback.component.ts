@@ -3,11 +3,11 @@ import { FeedBackServiceService } from '../../services/feed-back-service.service
 import { Feedback } from '../../interfaces/feedback';
 
 @Component({
-  selector: 'app-feedback-back-end',
-  templateUrl: './feedback-back-end.component.html',
-  styleUrls: ['./feedback-back-end.component.css']
+  selector: 'app-feedback',
+  templateUrl: './feedback.component.html',
+  styleUrls: ['./feedback.component.css']
 })
-export class FeedbackBackEndComponent implements OnInit {
+export class FeedbackComponent implements OnInit {
 
   feedBacks: Feedback[];
  
@@ -24,4 +24,4 @@ export class FeedbackBackEndComponent implements OnInit {
       .subscribe(feedback => this.feedBacks = feedback);
   }
 
-}  
+}

@@ -1,0 +1,30 @@
+<div class="feedbackContainer">
+  <div class="feedbackFilterBox">
+    <label class="textFilterLabel" for="textFilter">Search feedback:
+      <input class="searchFeedbackByContent" name="textFilter" id="searchFeedback" type="text" placeholder="search feedback by text">
+    </label>
+
+    <label for="filter" class="filterLabel">Filter feedback by:
+      <select name="filter" id="selectFeedbackFilter" class="feedbackFilter">
+        <option value="date">Date</option>
+        <option value="views">Views</option>
+        <option value="up">up votes</option>
+        <option value="down">Down votes</option>
+        <option value="comments">Comments</option>
+      </select>
+    </label>
+
+    <button class="addFeedbackBtn" id="addFeedbackBtn" routerLink="/add-feedback">ADD FEEDBACK</button>
+    
+
+  </div>
+
+  <div class="feedback" *ngFor="let feedback of feedBacks">
+      <h1 class="feedbackTitle">{{feedback.title}}</h1>
+      <button class="readMoreBtnFeedback scaleBtn05">Read more</button>
+      <button class="commentBtnFeedback scaleBtn05">Comment</button>
+      <!-- <p class="feedbackCategory">{{feedback.category}}</p>
+      <p class="feedbackText">{{feedback.feedback}}</p> -->
+  </div>
+
+</div>

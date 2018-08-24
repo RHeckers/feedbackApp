@@ -1,0 +1,146 @@
+.feedbackContainer{
+    margin-left: 15%;
+    /* padding: 0 25px; */
+    margin-top: 25px;
+}
+
+.feedbackFilterBox{
+    margin-bottom: 25px;
+}
+
+.feedbackTitle{
+    cursor: pointer;
+}
+
+.filterLabel{
+    /* margin-right: 15px; */
+    padding: 10px 0 8.5px 0px;
+    height: 40px;
+    margin-left: 8%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(29, 41, 55);
+    /* border-right: none; */
+}
+
+.feedbackFilter{
+    cursor: pointer;
+    height: 38.5px;
+    font-size: 0.9rem;
+    border: none;
+    /* border-right: 1px solid rgb(29, 41, 55); */
+    padding-top: 3px;
+    border-left: none;
+    background: none;
+    padding-left: 5px;
+
+}
+
+.textFilterLabel{
+    padding: 10px 0 8.5px 0px;
+    height: 40px;
+    margin-left: 5%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(29, 41, 55);
+    /* border-right: none; */
+}
+
+.searchFeedbackByContent{
+    height: 33.5px;
+    font-size: 0.9rem;
+    border: none;
+    /* border-right: 1px solid rgb(29, 41, 55); */
+    padding-top: 5px;
+    border-left: none;
+    background: none;
+    padding-left: 5px;
+
+}
+
+.addFeedbackBtn{
+    cursor: pointer;
+    padding: 0px 0 0px 0 ;
+    margin-left: 7.5%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 20%;
+    height: 40px;
+    border: 1px solid rgb(126, 211, 32);
+    border-radius: 20px;
+    background: rgb(126, 211, 32);
+    color: white;
+}
+
+.addFeedbackBtn:hover{
+    background: white;
+    transform: scale(1.02);
+    color: rgb(126, 211, 32);
+
+}
+
+.feedback{
+    width: 90%;
+    padding: 5px 0 5px 10px;
+    border-top: 0.5px solid rgb(174, 194, 201);
+    border-left: 0.5px solid rgb(174, 194, 201);
+    border-right: 0.5px solid rgb(174, 194, 201);
+    /* background: rgba(51, 183, 227, 0.514); */
+    margin: 0px 5%;
+    background: white;
+    position: relative;
+    
+}
+
+.feedback:last-child{
+    border-bottom: 0.5px solid rgb(174, 194, 201);
+}
+
+.feedbackTitle{
+    position: relative;
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.readMoreBtnFeedback{
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 0 0px 0 ;
+    margin-left: 1%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100px;
+    height: 1.5rem;
+    border: 1px solid rgb(51, 184, 227);
+    border-radius: 20px;
+    background: rgb(51, 184, 227);
+    color: white;
+    right: 120px;
+    top: 10px;
+
+}
+
+.commentBtnFeedback{
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 0 0px 0 ;
+    margin-left: 1%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100px;
+    height: 1.5rem;
+    border: 1px solid rgb(29, 41, 55);
+    border-radius: 20px;
+    background: rgb(29, 41, 55);
+    color: white;
+    right: 15px;
+    top: 10px;
+
+}
+
+.scaleBtn05:hover{
+    transform: scale(1.05);
+}
