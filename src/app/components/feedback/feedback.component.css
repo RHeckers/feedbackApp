@@ -13,6 +13,23 @@
     max-width: 70%;
 }
 
+.feedbackBody{
+    width: 98%;
+    margin-top: 10px;
+    padding: 10px 0 8px 0;
+    border-top: 1px solid rgb(29, 41, 55);
+    border-bottom: 1px solid rgb(29, 41, 55);
+    font-family: inherit;
+    font-size: 1.1rem;
+    display: none;
+    opacity: 0;
+}
+
+.feedbackCategory{
+    font-size: 0.7rem;
+    color: rgb(29, 41, 55);
+}
+
 .filterLabel{
     /* margin-right: 15px; */
     padding: 10px 0 8.5px 0px;
@@ -119,7 +136,7 @@
     background: rgb(51, 184, 227);
     color: white;
     right: 120px;
-    top: 10px;
+    top: 15px;
 
 }
 
@@ -138,10 +155,35 @@
     background: rgb(29, 41, 55);
     color: white;
     right: 15px;
-    top: 10px;
+    top: 15px;
 
 }
 
 .scaleBtn05:hover{
     transform: scale(1.05);
+}
+
+.feedbackComment{
+    background: rgb(227, 234, 241);
+    width: 70%;
+    padding: 15px;
+    margin: 10px;
+    font-size: 0.9rem;
+    border-radius: 15px;
+}
+
+.feedbackComment:nth-child(odd){
+    margin-left: 20%;
+}
+
+.commentBoxTitle{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.feedbackCommentBox{
+    width: 85%;
+    margin: 25px 10px;
+    position: relative;
+    display: inline-block;
 }

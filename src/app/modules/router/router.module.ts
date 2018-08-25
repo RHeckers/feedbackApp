@@ -18,6 +18,7 @@ const routes: Routes = [
   {path: 'category-selection', component: UserMainSelectionComponent},
   {path: 'admin-home', component: AdminHomeComponent},
   {path: 'login', component: MainLoginComponent},
+  {path: '', component: MainLoginComponent},
   {path: 'feedback', component: FeedbackComponent},
   {path: '**', component: NotfoundComponent}
 ]; 

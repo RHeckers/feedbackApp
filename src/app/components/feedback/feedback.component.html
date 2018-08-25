@@ -20,11 +20,27 @@
   </div>
 
   <div class="feedback" *ngFor="let feedback of feedBacks">
-      <h1 class="feedbackTitle">{{feedback.title}}</h1>
-      <button class="readMoreBtnFeedback scaleBtn05">Read more</button>
+      <p class="feedbackCategory">Category: {{feedback.category}}</p>
+      <h1 class="feedbackTitle" (click)="showFeedbackBody(feedback, $event)">{{feedback.title}}</h1>
+      <button class="readMoreBtnFeedback scaleBtn05" (click)="showFeedbackBody(feedback, $event)">Read More</button>
       <button class="commentBtnFeedback scaleBtn05">Comment</button>
-      <!-- <p class="feedbackCategory">{{feedback.category}}</p>
-      <p class="feedbackText">{{feedback.feedback}}</p> -->
+      <div class="feedbackBody">
+          <p>{{feedback.feedback}}</p>
+
+          <div class="feedbackCommentBox">
+            <h3 class="commentBoxTitle">Comments:</h3>
+            <div class="feedbackComment">
+                <p>I agree with this and wanted to test the comment</p>
+            </div>
+            <div class="feedbackComment">
+                <p>The styling of the commetsn is good enough for me at this stage, so now lets get going with adding post and submiting them to the database</p>
+            </div>
+            <div class="feedbackComment">
+                <p>This is to test for more comments, since I want to display one left and the other one on the right</p>
+            </div>
+          </div>
+      </div>
+      
   </div>
 
 </div>
