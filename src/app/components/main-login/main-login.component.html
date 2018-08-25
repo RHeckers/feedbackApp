@@ -1,0 +1,42 @@
+<style>
+  .btn{
+    width: 100%;
+    margin: 1.5% 0 0 0;
+  }
+</style> 
+
+<div *ngIf="auth.user | async; then authenticated else guest">
+  <!-- template will replace this div -->
+</div>
+
+
+  <div class="loginForm" id="loginForm">
+      <ng-template #guest>
+        <h3 class="loginFormText">Login Form</h3>
+        
+        <input class="loginInput" type="text" #email placeholder="Enter your email">
+        <input class="loginInput" type="password" #password placeholder="Enter your password">
+
+        <button class="loginBtn" (click)="login(email, password)">LOGIN</button>
+      </ng-template> 
+      <ng-template #authenticated>
+          <div *ngIf="auth.user | async as user">
+          
+              <h3 class="loginFormText">You are already logedin</h3>
+
+              <input class="loginInput" style="visibility: hidden;" type="text" #email placeholder="Enter your email">
+             <input class="loginInput"  style="visibility: hidden;"  type="password" #password placeholder="Enter your password">
+          
+              <button class="loginBtn" (click)="auth.signOut()">SIGN OUT</button>
+                
+            </div>
+      
+      </ng-template>
+      
+  </div>
+
+
+
+
+
+
