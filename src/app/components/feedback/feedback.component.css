@@ -10,6 +10,7 @@
 
 .feedbackTitle{
     cursor: pointer;
+    max-width: 70%;
 }
 
 .filterLabel{

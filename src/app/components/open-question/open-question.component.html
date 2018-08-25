@@ -21,8 +21,9 @@
       <textarea #feedback name="" id="" cols="30" rows="10"></textarea>
     </label> 
     
+    <p #date></p>
     
-    <button class="formSubmitBtn" (click)="add(feedbackTitle.value, feedbackCategory.value, feedback.value)">
+    <button class="formSubmitBtn" (click)="add(feedbackTitle.value, feedbackCategory.value, feedback.value, date)">
       Submit feedback
     </button>
 

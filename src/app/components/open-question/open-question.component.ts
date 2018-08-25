@@ -14,7 +14,7 @@ import { FeedBackServiceService } from '../../services/feed-back-service.service
 export class OpenQuestionComponent implements OnInit {
 
   pagetitle = 'GIVE ANONYMOUS FEEDBACK';
-  date: any;
+  
 
   constructor(
     private feedbackService: FeedBackServiceService,
@@ -22,13 +22,16 @@ export class OpenQuestionComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+   
   }
 
-  add(title: string, category: string, feedback: string ): void {
+  add(title: string, category: string, feedback: string, date: any): void {
     title = title.trim();
+    date = new Date().getTime();
+
   
     if (!title || !feedback) { return; }    
-    this.feedbackService.addFeedBack({ title, category, feedback } as Feedback);
+    this.feedbackService.addFeedBack({ title, category, feedback, date } as Feedback);
     this.router.navigate(['/feedback']);
     // this.location.go('/userAccount/');?
   }
