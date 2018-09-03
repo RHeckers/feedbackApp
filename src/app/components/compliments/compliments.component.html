@@ -1,0 +1,46 @@
+<div class="complimentsContainer">
+  <div class="complimentsFilterBox">
+    <label class="textFilterLabel" for="textFilter">Search compliment:
+      <input class="searchcomplimentsByContent" name="textFilter" id="searchcompliments" type="text" placeholder="search by text">
+    </label>
+
+    <label for="filter" class="filterLabel">Filter compliments by:
+      <select name="filter" id="selectcomplimentsFilter" class="complimentsFilter">
+        <option value="date">Date</option>
+        <option value="views">Views</option>
+        <option value="up">up votes</option>
+        <option value="down">Down votes</option>
+        <option value="comments">Comments</option>
+      </select>
+    </label>
+
+    <button class="addcomplimentsBtn" id="addcomplimentsBtn" routerLink="/add-compliments">ADD COMPLIMENT</button>
+    
+
+  </div>
+
+  <div class="compliments" *ngFor="let compliment of compliments">
+      <p class="complimentsCategory">Category: {{compliment.category}}</p>
+      <h1 class="complimentsTitle" (click)="showcomplimentsBody(compliments, $event)">{{compliment.title}}</h1>
+      <button class="readMoreBtncompliments scaleBtn05" (click)="showcomplimentsBody(compliment, $event)">Read More</button>
+      <button class="commentBtncompliments scaleBtn05">Comment</button>
+      <div class="complimentsBody">
+          <p>{{compliment.compliment}}</p>
+
+          <div class="complimentsCommentBox">
+            <h3 class="commentBoxTitle">Comments:</h3>
+            <div class="complimentsComment">
+                <p>I agree with this and wanted to test the comment</p>
+            </div>
+            <div class="complimentsComment">
+                <p>The styling of the commetsn is good enough for me at this stage, so now lets get going with adding post and submiting them to the database</p>
+            </div>
+            <div class="complimentsComment">
+                <p>This is to test for more comments, since I want to display one left and the other one on the right</p>
+            </div>
+          </div>
+      </div>
+      
+  </div>
+
+</div>

@@ -1,36 +1,67 @@
-<div class="adminHomeContainer" id="adminHomeContainer">
-  <div class="newestFeedbackContainer" routerLink='/company-questions'>
+<div class="container" id="container">
 
-    <h1 id="companyQuestionsTitle" class="adminHomeSectionSelectionTitle" >Your newest feedback</h1>
-    <p class="adminHomeSectionSelectionText" >Here come some feedback blocks</p>
+  <div class="feedbackContainer">
+      <h3 class="recentFeedbackTitle title">Most Recent Feedback:</h3>
+      <div class="itemHolder">
+          <div class="feedback" *ngFor="let feedback of feedBacks">
+              <p class="feedbackCategory">Category: {{feedback.category}}</p>
+              <h1 class="feedbackTitle ">{{feedback.title}}</h1>
+              <div class="feedbackBody">
+                  <p>{{feedback.feedback}}</p>>
+                  
+              </div>
+              
+          </div>
+
+      </div>
+       
+      <button class="allBtn">SHOW ALL</button>
+
+  </div>
+
   
-  </div>
-    
-  <div class="adminHomeSectionSelection" routerLink='/open-feedback'>
 
-    <div class="circle"></div>
-    
-    <h1 id="openCritiqueTitle" class="adminHomeSectionSelectionTitle">Company questions</h1>
-    <p class="adminHomeSectionSelectionText" >Dont just wait for your employees to submit new feedback, also pro-activly ask their opinion</p>
+  <!-- Below comes the Compliements -->
+
+  <div class="complimentContainer">
+      <h3 class="recentcomplimentTitle title">Most Recent Compliment:</h3>
+      <div class="itemHolder">
+          <div class="compliment" *ngFor="let compliment of compliments">
+              <p class="complimentCategory">Category: {{compliment.category}}</p>
+              <h1 class="complimentTitle " >{{compliment.title}}</h1>
+              <div class="complimentBody">
+                  <p>{{compliment.compliment}}</p>
+              </div>
+          </div> 
+
+      </div>
+      
+      <button class="allBtn">SHOW ALL</button>
+
+  </div>
   
-  </div>
-    
-  <div class="adminHomeSectionSelection" routerLink='/feedback-adminPanel'>
 
-    <div class="circle"></div>
-    
-    <h1 id="" class="adminHomeSectionSelectionTitle">Feedback</h1>
-    <p class="adminHomeSectionSelectionText">It's the good stuuf that makes a company great, so please also share everything that you liked</p>
-      
-  </div>
 
-  <div class="adminHomeSectionSelection" routerLink='/open-feedback'>
 
-    <div class="circle"></div>
+<!-- Below goes the HTML for the most recent questions -->
+
+<div class="questionContainer">
+    <h3 class="recentquestionTitle title">Most Recent Questions:</h3>
+    <div class="itemHolder">
+        <div class="question" *ngFor="let question of questions">
+            <p class="questionCategory">Category: {{question.category}}</p>
+            <h1 class="questionTitle " >{{question.title}}</h1>
+            <div class="questionBody">
+                <p>{{question.compliment}}</p>
+            </div>        
+        </div> 
+
+    </div>
     
-    <h1 id="" class="adminHomeSectionSelectionTitle">Compliments</h1>
-    <p class="adminHomeSectionSelectionText">See all the details hbhuiib hubkbl hkglkgk  gyggygyig you need about the feedback you get and make better and more informed decisions</p>
-      
-  </div>
+    <button class="allBtn">SHOW ALL</button>
 
 </div>
+
+
+
+

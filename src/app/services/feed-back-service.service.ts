@@ -4,6 +4,7 @@ import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument 
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Question } from '../interfaces/question';
+import { Compliment } from '../interfaces/compliment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,10 +13,14 @@ export class FeedBackServiceService {
 
   feedbackCollection: AngularFirestoreCollection<Feedback>;
   feedbackDoc: AngularFirestoreDocument<Feedback>;
+  complimentsCollection: AngularFirestoreCollection<Compliment>;
+  complimentDoc: AngularFirestoreDocument<Compliment>;
   companyQuestionCollection: AngularFirestoreCollection<Question>;
   companyQuestionDoc: AngularFirestoreDocument<Question>;
   allFeedback: Observable<Feedback[]>;
+  allCompliments: Observable<Compliment[]>;
   feedback: Observable<Feedback>;
+  compliment: Observable<Compliment>;
   companyQuestions: Observable<Question[]>;
   companyQuestion: Observable<Question>;
 
@@ -24,6 +29,7 @@ export class FeedBackServiceService {
   ) {
     this.getFeedback();
     this.getCompanyQuestions();
+    this.getCompliments();
    }
 
    getCompanyQuestions (): Observable<Question[]> {
@@ -49,6 +55,23 @@ export class FeedBackServiceService {
       });
     }));
     return this.allFeedback;
+  }
+
+  getCompliments(): Observable<Compliment[]> {
+    this.complimentsCollection = this.asf.collection<Compliment>('/compliments');
+    this.allCompliments = this.complimentsCollection.snapshotChanges().pipe(map(actions => {
+    return actions.map(a => {
+      const data = a.payload.doc.data() as Compliment;
+      const id = a.payload.doc.id;
+      return { id, ...data };
+      });
+    }));
+    return this.allCompliments
+  }
+
+  addCompliment(compliment: Compliment){
+    this.feedbackCollection.add(compliment);
+
   }
 
 

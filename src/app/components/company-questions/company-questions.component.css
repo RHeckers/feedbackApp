@@ -1,31 +1,190 @@
-.companyQuestionsHolder{
-    text-align: center;
-    position: relative;
+.questionContainer{
+    margin-left: 15%;
+    /* padding: 0 25px; */
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-.companyQuestion{
-    display: inline-block;
-    margin: 20px 2%;
-    width: 39%; 
-    padding: 1%;
-    border: 1.5px solid rgb(42, 60, 76);
-    border-radius: 15px;
-    text-align: left;
-    box-shadow: 0 4px 6px rgba(11, 15, 31, 0.24);
-    background: rgb(255, 255, 255);
-    min-height: 140px;
-    max-height: 140px;
-    overflow: hidden;
+.questionFilterBox{
+    margin-bottom: 25px;
+}
+
+.questionTitle{
     cursor: pointer;
+    max-width: 70%;
 }
 
-.companyQuestionPageTitle{
-    margin: 25px 0 ;
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: rgb(42, 60, 76);
+.questionBody{
+    width: 98%;
+    margin-top: 10px;
+    padding: 10px 0 8px 0;
+    border-top: 1px solid rgb(29, 41, 55);
+    border-bottom: 1px solid rgb(29, 41, 55);
+    font-family: inherit;
+    font-size: 1.1rem;
+    display: none;
+    opacity: 0;
 }
 
-.companyQuestionTitle{
-    font-size: 1.3rem;
+.questionCategory{
+    font-size: 0.7rem;
+    color: rgb(29, 41, 55);
+}
+
+.filterLabel{
+    /* margin-right: 15px; */
+    padding: 10px 0 8.5px 0px;
+    height: 40px;
+    margin-left: 8%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(29, 41, 55);
+    /* border-right: none; */
+}
+
+.questionFilter{
+    cursor: pointer;
+    height: 38.5px;
+    font-size: 0.9rem;
+    border: none;
+    /* border-right: 1px solid rgb(29, 41, 55); */
+    padding-top: 3px;
+    border-left: none;
+    background: none;
+    padding-left: 5px;
+
+}
+
+.textFilterLabel{
+    padding: 10px 0 8.5px 0px;
+    height: 40px;
+    margin-left: 5%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(29, 41, 55);
+    /* border-right: none; */
+}
+
+.searchquestionByContent{
+    height: 33.5px;
+    font-size: 0.9rem;
+    border: none;
+    /* border-right: 1px solid rgb(29, 41, 55); */
+    padding-top: 5px;
+    border-left: none;
+    background: none;
+    padding-left: 5px;
+
+}
+
+.addquestionBtn{
+    cursor: pointer;
+    padding: 0px 0 0px 0 ;
+    margin-left: 9.5%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 19%;
+    height: 40px;
+    border: 1px solid rgb(126, 211, 32);
+    border-radius: 20px;
+    background: rgb(126, 211, 32);
+    color: white;
+}
+
+.addquestionBtn:hover{
+    background: white;
+    transform: scale(1.02);
+    color: rgb(126, 211, 32);
+
+}
+
+.question{
+    width: 90%;
+    padding: 5px 0 5px 10px;
+    border-top: 0.5px solid rgb(174, 194, 201);
+    border-left: 0.5px solid rgb(174, 194, 201);
+    border-right: 0.5px solid rgb(174, 194, 201);
+    /* background: rgba(51, 183, 227, 0.514); */
+    margin: 0px 5%;
+    background: white;
+    position: relative;
+    
+}
+
+.question:last-child{
+    border-bottom: 0.5px solid rgb(174, 194, 201);
+}
+
+.questionTitle{
+    position: relative;
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.readMoreBtnquestion{
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 0 0px 0 ;
+    margin-left: 1%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100px;
+    height: 1.5rem;
+    border: 1px solid rgb(51, 184, 227);
+    border-radius: 20px;
+    background: rgb(51, 184, 227);
+    color: white;
+    right: 120px;
+    top: 15px;
+
+}
+
+.commentBtnquestion{
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 0 0px 0 ;
+    margin-left: 1%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100px;
+    height: 1.5rem;
+    border: 1px solid rgb(29, 41, 55);
+    border-radius: 20px;
+    background: rgb(29, 41, 55);
+    color: white;
+    right: 15px;
+    top: 15px;
+
+}
+
+.scaleBtn05:hover{
+    transform: scale(1.05);
+}
+
+.questionComment{
+    background: rgb(227, 234, 241);
+    width: 70%;
+    padding: 15px;
+    margin: 10px;
+    font-size: 0.9rem;
+    border-radius: 15px;
+}
+
+.questionComment:nth-child(odd){
+    margin-left: 20%;
+}
+
+.commentBoxTitle{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.questionCommentBox{
+    width: 85%;
+    margin: 25px 10px;
+    position: relative;
+    display: inline-block;
 }

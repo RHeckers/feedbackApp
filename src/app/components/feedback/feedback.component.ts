@@ -52,6 +52,6 @@ export class FeedbackComponent implements OnInit {
   getFeedback(): void {
     this.feedbackService.getFeedback()
       .subscribe(feedback => this.feedBacks = feedback);
-  }
+  } 
 
 }
