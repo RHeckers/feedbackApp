@@ -19,6 +19,7 @@ import { AdminHomeComponent } from './components/admin-home/admin-home.component
 import { MainLoginComponent } from './components/main-login/main-login.component';
 import { CoreModule } from './auth/core.module';
 import { FeedbackComponent } from './components/feedback/feedback.component';
+import { ComplimentsComponent } from './components/compliments/compliments.component';
 
 
 
@@ -34,7 +35,8 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
     NotfoundComponent,
     AdminHomeComponent,
     MainLoginComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    ComplimentsComponent
   ],
   imports: [
     BrowserModule,

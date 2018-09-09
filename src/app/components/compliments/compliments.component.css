@@ -1,20 +1,20 @@
-.feedbackContainer{
+.complimentsContainer{
     margin-left: 15%;
     /* padding: 0 25px; */
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-.feedbackFilterBox{
+.complimentsFilterBox{
     margin-bottom: 25px;
 }
 
-.feedbackTitle{
+.complimentsTitle{
     cursor: pointer;
     max-width: 70%;
 }
 
-.feedbackBody{
+.complimentsBody{
     width: 98%;
     margin-top: 10px;
     padding: 10px 0 8px 0;
@@ -26,23 +26,23 @@
     opacity: 0;
 }
 
-.feedbackCategory{
+.complimentsCategory{
     font-size: 0.7rem;
     color: rgb(29, 41, 55);
 }
 
 .filterLabel{
     /* margin-right: 15px; */
-    padding: 10px 0 8.5px 0px;
+    padding: 10px 0 0px 0px;
     height: 40px;
-    margin-left: 8%;
+    margin-left: 4%;
     font-size: 1.1rem;
     font-weight: bold;
     border-bottom: 1px solid rgb(29, 41, 55);
     /* border-right: none; */
 }
 
-.feedbackFilter{
+.complimentsFilter{
     cursor: pointer;
     height: 38.5px;
     font-size: 0.9rem;
@@ -56,7 +56,7 @@
 }
 
 .textFilterLabel{
-    padding: 10px 0 8.5px 0px;
+    padding: 10px 0 0px 0px;
     height: 40px;
     margin-left: 5%;
     font-size: 1.1rem;
@@ -65,7 +65,7 @@
     /* border-right: none; */
 }
 
-.searchFeedbackByContent{
+.searchcomplimentsByContent{
     height: 33.5px;
     font-size: 0.9rem;
     border: none;
@@ -77,13 +77,13 @@
 
 }
 
-.addFeedbackBtn{
+.addcomplimentsBtn{
     cursor: pointer;
     padding: 0px 0 0px 0 ;
-    margin-left: 8%;
+    margin-left: 5%;
     font-size: 1.4rem;
     font-weight: bold;
-    width: 20%;
+    width: 22%;
     height: 40px;
     border: 1px solid rgb(126, 211, 32);
     border-radius: 20px;
@@ -91,14 +91,14 @@
     color: white;
 }
 
-.addFeedbackBtn:hover{
+.addcomplimentsBtn:hover{
     background: white;
     transform: scale(1.02);
     color: rgb(126, 211, 32);
 
 }
 
-.feedback{
+.compliments{
     width: 90%;
     padding: 5px 0 5px 10px;
     border-top: 0.5px solid rgb(174, 194, 201);
@@ -111,18 +111,18 @@
     
 }
 
-.feedback:last-child{
+.compliments:last-child{
     border-bottom: 0.5px solid rgb(174, 194, 201);
 }
 
-.feedbackTitle{
+.complimentsTitle{
     position: relative;
     display: inline-block;
     font-size: 1.7rem;
     font-weight: bold;
 }
 
-.readMoreBtnFeedback{
+.readMoreBtncompliments{
     position: absolute;
     display: inline-block;
     cursor: pointer;
@@ -141,7 +141,7 @@
 
 }
 
-.commentBtnFeedback{
+.commentBtncompliments{
     position: absolute;
     display: inline-block;
     cursor: pointer;
@@ -164,7 +164,7 @@
     transform: scale(1.05);
 }
 
-.feedbackComment{
+.complimentsComment{
     background: rgb(227, 234, 241);
     width: 70%;
     padding: 15px;
@@ -173,7 +173,7 @@
     border-radius: 15px;
 }
 
-.feedbackComment:nth-child(odd){
+.complimentsComment:nth-child(odd){
     margin-left: 20%;
 }
 
@@ -182,7 +182,7 @@
     font-weight: bold;
 }
 
-.feedbackCommentBox{
+.complimentsCommentBox{
     width: 85%;
     margin: 25px 10px;
     position: relative;

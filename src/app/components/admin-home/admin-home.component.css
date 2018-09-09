@@ -1,43 +1,218 @@
-.newestFeedbackContainer{
-    border: 1px solid black;
-    padding: 5px;
-    margin: 25px 5% 25px 5%;
-}
-
-.adminHomeContainer{
-    height: 600px;
-}
-
-.adminHomeSectionSelection{
-    cursor: pointer;
-    text-align: center;
-    border: 1px solid black;
-    padding: 5px;
-    margin-left: 8%;
+.container{
+    margin-left: 15%;
+    position: relative;
     margin-top: 50px;
-    margin-bottom: 25px;
-    width: 22%;
-    bottom: 0px;
-    height: 250px;
-    float: left;
-    z-index: -1;
-    font-size: 18px;
+    margin-bottom: 30px;
 }
 
-.circle{
-    width: 6rem;
-    height: 6rem;
-    margin-left: 7.5%;
-    margin-top: -55px;
-    position: absolute;
-    border: 1px solid black;
+.title{
+    font-weight: bold;
+}
+
+.itemHolder{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.allBtn{
+    cursor: pointer;
+    margin-top: 0.75rem;
+    padding: 0px 0 0px 0 ;
+    margin-left: 12.5%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 75%;
+    height: 40px;
+    border: 1px solid rgb(126, 211, 32);
+    border-radius: 20px;
     background: white;
-    border-radius: 100%;
+    color: rgb(126, 211, 32);
+    display: block;
 }
 
-.adminHomeSectionSelectionTitle{
-    padding-top: 60px;
-    /* padding-bottom: 7px; */
-    font-size: 25px;
-    font-weight: 600;
+.allBtn:hover{
+    border: 1px solid rgb(126, 211, 32);
+    background: rgb(126, 211, 32);
+    color: white;
+}
+
+
+.feedbackContainer{
+    position: relative;
+    display: inline-block;
+    width: 26.667%;
+    margin-left: 5%;
+    margin-right: 2.5%;
+}
+
+.feedbackTitle{
+    cursor: pointer;
+}
+
+.feedbackBody{
+    width: 98%;
+    margin-top: 10px;
+    padding: 10px 0 8px 0;
+    border-top: 1px solid rgb(29, 41, 55);
+    border-bottom: 1px solid rgb(29, 41, 55);
+    font-family: inherit;
+    font-size: 1.1rem;
+    display: none;
+    opacity: 0;
+}
+
+.feedbackCategory{
+    font-size: 0.5rem;
+    color: rgb(29, 41, 55);
+}
+
+.feedback{
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    border-top: 0.5px solid rgb(174, 194, 201);
+    border-left: 0.5px solid rgb(174, 194, 201);
+    border-right: 0.5px solid rgb(174, 194, 201);
+    /* background: rgba(51, 183, 227, 0.514); */
+    background: white;
+    position: relative;
+    
+}
+
+.recentFeedbackTitle{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+
+}
+
+.feedback:last-child{
+    border-bottom: 0.5px solid rgb(174, 194, 201);
+}
+
+.feedbackTitle{
+    position: relative;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Below the compliments css */
+.complimentContainer{
+    position: absolute;
+    display: inline-block;
+    width: 26.667%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.complimentTitle{
+    cursor: pointer;
+}
+
+.complimentBody{
+    width: 98%;
+    margin-top: 10px;
+    padding: 10px 0 8px 0;
+    border-top: 1px solid rgb(29, 41, 55);
+    border-bottom: 1px solid rgb(29, 41, 55);
+    font-family: inherit;
+    font-size: 1.1rem;
+    display: none;
+    opacity: 0;
+}
+
+.complimentCategory{
+    font-size: 0.5rem;
+    color: rgb(29, 41, 55);
+}
+
+.compliment{
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    border-top: 0.5px solid rgb(174, 194, 201);
+    border-left: 0.5px solid rgb(174, 194, 201);
+    border-right: 0.5px solid rgb(174, 194, 201);
+    /* background: rgba(51, 183, 227, 0.514); */
+    background: white;
+    position: relative;
+    
+}
+
+.recentcomplimentTitle{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+
+}
+
+.compliment:last-child{
+    border-bottom: 0.5px solid rgb(174, 194, 201);
+}
+
+.complimentTitle{
+    position: relative;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+/* Below the question css */
+.questionContainer{
+    position: absolute;
+    display: inline-block;
+    width: 26.667%;
+    margin-left: 34%;
+    margin-right: 2.5%;
+}
+
+.questionTitle{
+    cursor: pointer;
+}
+
+.questionBody{
+    width: 98%;
+    margin-top: 10px;
+    padding: 10px 0 8px 0;
+    border-top: 1px solid rgb(29, 41, 55);
+    border-bottom: 1px solid rgb(29, 41, 55);
+    font-family: inherit;
+    font-size: 1.1rem;
+    display: none;
+    opacity: 0;
+}
+
+.questionCategory{
+    font-size: 0.5rem;
+    color: rgb(29, 41, 55);
+}
+
+.question{
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    border-top: 0.5px solid rgb(174, 194, 201);
+    border-left: 0.5px solid rgb(174, 194, 201);
+    border-right: 0.5px solid rgb(174, 194, 201);
+    /* background: rgba(51, 183, 227, 0.514); */
+    background: white;
+    position: relative;
+    
+}
+
+.recentquestionTitle{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+
+}
+
+.question:last-child{
+    border-bottom: 0.5px solid rgb(174, 194, 201);
+}
+
+.questionTitle{
+    position: relative;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: bold;
 }

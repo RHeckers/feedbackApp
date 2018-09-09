@@ -1,11 +1,46 @@
-<div class="companyQuestionsHolder">
+<div class="questionContainer">
+  <div class="questionFilterBox">
+    <label class="textFilterLabel" for="textFilter">Search question:
+      <input class="searchquestionByContent" name="textFilter" id="searchquestion" type="text" placeholder="search question by text">
+    </label>
 
-  <h1 class="companyQuestionPageTitle">Things we need your feedback on</h1>
+    <label for="filter" class="filterLabel">Filter question by:
+      <select name="filter" id="selectquestionFilter" class="questionFilter">
+        <option value="date">Date</option>
+        <option value="views">Views</option>
+        <option value="up">up votes</option>
+        <option value="down">Down votes</option>
+        <option value="comments">Comments</option>
+      </select>
+    </label>
 
-  <div class="companyQuestion" *ngFor="let question of questions">
-    <h1 class="companyQuestionTitle">{{question.title}}</h1>
-    <p class="companyQuestionCategory">{{question.category}}</p>
-    <p class="companyQuestionText">{{question.questionText}}</p>
+    <button class="addquestionBtn" id="addquestionBtn" routerLink="/add-question">ADD QUESTION</button>
+    
+
+  </div>
+
+  <div class="question" *ngFor="let question of questions">
+      <p class="questionCategory">Category: {{question.category}}</p>
+      <h1 class="questionTitle" (click)="showquestionBody(question, $event)">{{question.title}}</h1>
+      <button class="readMoreBtnquestion scaleBtn05" (click)="showquestionBody(question, $event)">Read More</button>
+      <button class="commentBtnquestion scaleBtn05">Comment</button>
+      <div class="questionBody">
+          <p>{{question.question}}</p>
+
+          <div class="questionCommentBox">
+            <h3 class="commentBoxTitle">Comments:</h3>
+            <div class="questionComment">
+                <p>I agree with this and wanted to test the comment</p>
+            </div>
+            <div class="questionComment">
+                <p>The styling of the commetsn is good enough for me at this stage, so now lets get going with adding post and submiting them to the database</p>
+            </div>
+            <div class="questionComment">
+                <p>This is to test for more comments, since I want to display one left and the other one on the right</p>
+            </div>
+          </div>
+      </div>
+      
   </div>
 
 </div>
